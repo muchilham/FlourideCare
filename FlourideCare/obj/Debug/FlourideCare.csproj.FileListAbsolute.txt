@@ -1,0 +1,37 @@
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\bin\Debug\FlourideCare.exe.config
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\bin\Debug\FlourideCare.exe
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\bin\Debug\FlourideCare.pdb
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.csprojResolveAssemblyReference.cache
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmUtama.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.Properties.Resources.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.csproj.GenerateResource.Cache
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.exe
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.pdb
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmUser.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmDokter.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmJadwal.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmAntrian.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmDiagnosa.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmJenis.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmObat.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmPembayaran.resources
+c:\users\no characters\documents\visual studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmRuangan.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\bin\Debug\FlourideCare.exe.config
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\bin\Debug\FlourideCare.exe
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\bin\Debug\FlourideCare.pdb
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.csprojResolveAssemblyReference.cache
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmAntrian.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmDiagnosa.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmDokter.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmJadwal.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmJenis.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmObat.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmPembayaran.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmRuangan.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmUser.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmUtama.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.Properties.Resources.resources
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.csproj.GenerateResource.Cache
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.exe
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.pdb
+C:\Users\HOME\Documents\Visual Studio 2013\Projects\FlourideCare\FlourideCare\obj\Debug\FlourideCare.frmPembayaranDetail.resources

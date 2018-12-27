@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16.75, 8.875" name="FluorideDB">
+  <DataContextMoniker Name="/FluorideDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d4946c52-8ffd-4ec1-ba35-47f6b677a68e" absoluteBounds="6.25, 1, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_Antrian" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24012925-c9cb-4e78-bf03-49b29ed504ec" absoluteBounds="6.265, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61c42a77-8cae-48de-b1e2-b4a6bec602f7" absoluteBounds="3.5, 5.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea62639e-05db-4213-852f-64f78fdf3c46" absoluteBounds="3.515, 5.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="700d3af6-1a04-47e1-a7f1-65468689ac59" absoluteBounds="9, 1, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_Diagnosa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9c75796-6e9d-46b5-a4a7-d276a52dc311" absoluteBounds="9.015, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5069014-6438-4c73-a8dc-b9be85836b5a" absoluteBounds="0.75, 6.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_Dokter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="696804db-c3bd-4384-ab67-7a40e9600dca" absoluteBounds="0.765, 6.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee394ec1-a6ae-4897-83e2-1c4180d16512" absoluteBounds="0.75, 4, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_Jadwal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db9422ef-1e78-4e47-ad28-ae45ff51f084" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="597fdfd1-0846-4909-a951-6d37c73d3f70" absoluteBounds="11.75, 4.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_Obat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e3801a1-25e2-46dd-baa4-750dcf019def" absoluteBounds="11.765, 4.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="49cca3e0-cdd1-40b8-a03d-eab903ba0bf0" absoluteBounds="14.5, 1, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_PembayaranDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd974d55-2cff-4b45-b1be-41faca39cf65" absoluteBounds="14.515, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42ed53a4-55b6-444f-afec-7ef85a189638" absoluteBounds="11.75, 1.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_PembayaranMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1854b2f-9690-444a-beb6-f1cbd9e4660e" absoluteBounds="11.765, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="885b6aa4-a977-4aea-ad09-46f0e08f2140" absoluteBounds="3.5, 0.875, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_Ruangan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa8b4a96-1577-431d-b3eb-298da887491a" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ad7a6629-fc02-4f20-bb81-80fe4cf5aa23" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/FluorideDBDataContext/tbl_tipe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e81f4983-239b-463d-b219-cc8c38b3bc46" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.52005126953125); (7.25 : 6.52005126953125); (7.25 : 2.77089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_User/tbl_User_tbl_Antrian" />
+      <nodes>
+        <classShapeMoniker Id="61c42a77-8cae-48de-b1e2-b4a6bec602f7" />
+        <classShapeMoniker Id="d4946c52-8ffd-4ec1-ba35-47f6b677a68e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 1.88544840494792); (9 : 1.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_Antrian/tbl_Antrian_tbl_Diagnosa" />
+      <nodes>
+        <classShapeMoniker Id="d4946c52-8ffd-4ec1-ba35-47f6b677a68e" />
+        <classShapeMoniker Id="700d3af6-1a04-47e1-a7f1-65468689ac59" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 4.91429768880208); (15.5 : 4.91429768880208); (15.5 : 2.77089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_Obat/tbl_Obat_tbl_PembayaranDetail" />
+      <nodes>
+        <classShapeMoniker Id="597fdfd1-0846-4909-a951-6d37c73d3f70" />
+        <classShapeMoniker Id="49cca3e0-cdd1-40b8-a03d-eab903ba0bf0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 1.91429768880208); (14.5 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_PembayaranMaster/tbl_PembayaranMaster_tbl_PembayaranDetail" />
+      <nodes>
+        <classShapeMoniker Id="42ed53a4-55b6-444f-afec-7ef85a189638" />
+        <classShapeMoniker Id="49cca3e0-cdd1-40b8-a03d-eab903ba0bf0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 1.91429768880208); (11.75 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_Diagnosa/tbl_Diagnosa_tbl_PembayaranMaster" />
+      <nodes>
+        <classShapeMoniker Id="700d3af6-1a04-47e1-a7f1-65468689ac59" />
+        <classShapeMoniker Id="42ed53a4-55b6-444f-afec-7ef85a189638" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.88544840494792); (6.25 : 1.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_Ruangan/tbl_Ruangan_tbl_Antrian" />
+      <nodes>
+        <classShapeMoniker Id="885b6aa4-a977-4aea-ad09-46f0e08f2140" />
+        <classShapeMoniker Id="d4946c52-8ffd-4ec1-ba35-47f6b677a68e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.12653746153846); (3.125 : 5.75153746153846); (3.125 : 1.85659912109375); (3.5 : 1.85659912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_Dokter/tbl_Dokter_tbl_Ruangan" />
+      <nodes>
+        <classShapeMoniker Id="f5069014-6438-4c73-a8dc-b9be85836b5a" />
+        <classShapeMoniker Id="885b6aa4-a977-4aea-ad09-46f0e08f2140" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.0618490375601); (3.06607443490112 : 3.74577460265897 : JumpStart); (3.18392556509888 : 3.62792347246122 : JumpEnd); (3.3125 : 3.4993490375601); (3.3125 : 2.37865068164062); (3.5 : 2.37865068164062)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_Jadwal/tbl_Jadwal_tbl_Ruangan" />
+      <nodes>
+        <classShapeMoniker Id="ee394ec1-a6ae-4897-83e2-1c4180d16512" />
+        <classShapeMoniker Id="885b6aa4-a977-4aea-ad09-46f0e08f2140" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.49079956054687); (3.5 : 1.49079956054687)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FluorideDBDataContext/tbl_tipe/tbl_tipe_tbl_Ruangan" />
+      <nodes>
+        <classShapeMoniker Id="ad7a6629-fc02-4f20-bb81-80fe4cf5aa23" />
+        <classShapeMoniker Id="885b6aa4-a977-4aea-ad09-46f0e08f2140" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

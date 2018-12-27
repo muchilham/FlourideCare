@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCC1C98D-7FF7-4F08-B4D6-D7F5095B0099}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlourideCare</RootNamespace>
+    <AssemblyName>FlourideCare</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FluorideDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluorideDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="frmAntrian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAntrian.Designer.cs">
+      <DependentUpon>frmAntrian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiagnosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiagnosa.Designer.cs">
+      <DependentUpon>frmDiagnosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDokter.Designer.cs">
+      <DependentUpon>frmDokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJadwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJadwal.Designer.cs">
+      <DependentUpon>frmJadwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJenis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJenis.Designer.cs">
+      <DependentUpon>frmJenis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmObat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObat.Designer.cs">
+      <DependentUpon>frmObat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPembayaran.Designer.cs">
+      <DependentUpon>frmPembayaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPembayaranDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPembayaranDetail.Designer.cs">
+      <DependentUpon>frmPembayaranDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRuangan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRuangan.Designer.cs">
+      <DependentUpon>frmRuangan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUtama.Designer.cs">
+      <DependentUpon>frmUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="validasi.cs" />
+    <None Include="FluorideDB.dbml.layout">
+      <DependentUpon>FluorideDB.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmAntrian.resx">
+      <DependentUpon>frmAntrian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiagnosa.resx">
+      <DependentUpon>frmDiagnosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDokter.resx">
+      <DependentUpon>frmDokter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJadwal.resx">
+      <DependentUpon>frmJadwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJenis.resx">
+      <DependentUpon>frmJenis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObat.resx">
+      <DependentUpon>frmObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPembayaran.resx">
+      <DependentUpon>frmPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPembayaranDetail.resx">
+      <DependentUpon>frmPembayaranDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRuangan.resx">
+      <DependentUpon>frmRuangan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUtama.resx">
+      <DependentUpon>frmUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="FluorideDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>FluorideDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

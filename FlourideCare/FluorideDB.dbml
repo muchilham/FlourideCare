@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FluorideCareDB" Class="FluorideDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-D9NU0BV\SQLEXPRESS;Initial Catalog=FluorideCareDB;Integrated Security=True" SettingsObjectName="FlourideCare.Properties.Settings" SettingsPropertyName="FluorideCareDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_Antrian" Member="tbl_Antrians">
+    <Type Name="tbl_Antrian">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="no_antrian" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id_ruangan" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id_user" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tanggal" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Antrian_tbl_Diagnosa" Member="tbl_Diagnosas" ThisKey="id" OtherKey="id" Type="tbl_Diagnosa" />
+      <Association Name="tbl_User_tbl_Antrian" Member="tbl_User" ThisKey="id_user" OtherKey="id_user" Type="tbl_User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="tbl_Ruangan_tbl_Antrian" Member="tbl_Ruangan" ThisKey="id_ruangan" OtherKey="id_ruangan" Type="tbl_Ruangan" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_User" Member="tbl_Users">
+    <Type Name="tbl_User">
+      <Column Name="id_user" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nama" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="jenis_kelamin" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tanggal_lahir" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="alamat" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="kota" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="kodepos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="telepon" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_User_tbl_Antrian" Member="tbl_Antrians" ThisKey="id_user" OtherKey="id_user" Type="tbl_Antrian" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Diagnosa" Member="tbl_Diagnosas">
+    <Type Name="tbl_Diagnosa">
+      <Column Name="id_diagnosa" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="hasil_diagnosa" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="resep" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Diagnosa_tbl_PembayaranMaster" Member="tbl_PembayaranMasters" ThisKey="id_diagnosa" OtherKey="id_diagnosa" Type="tbl_PembayaranMaster" />
+      <Association Name="tbl_Antrian_tbl_Diagnosa" Member="tbl_Antrian" ThisKey="id" OtherKey="id" Type="tbl_Antrian" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Dokter" Member="tbl_Dokters">
+    <Type Name="tbl_Dokter">
+      <Column Name="id_dokter" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nama" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="jenis_kelamin" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tanggal_lahir" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="alamat" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="kota" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="kodepos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="telepon" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Dokter_tbl_Ruangan" Member="tbl_Ruangans" ThisKey="id_dokter" OtherKey="id_dokter" Type="tbl_Ruangan" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Jadwal" Member="tbl_Jadwals">
+    <Type Name="tbl_Jadwal">
+      <Column Name="id_jadwal" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="mulai" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Column Name="selesai" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Jadwal_tbl_Ruangan" Member="tbl_Ruangans" ThisKey="id_jadwal" OtherKey="id_jadwal" Type="tbl_Ruangan" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Obat" Member="tbl_Obats">
+    <Type Name="tbl_Obat">
+      <Column Name="id_obat" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nama_obat" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="harga" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="stok" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Obat_tbl_PembayaranDetail" Member="tbl_PembayaranDetails" ThisKey="id_obat" OtherKey="id_obat" Type="tbl_PembayaranDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_PembayaranDetail" Member="tbl_PembayaranDetails">
+    <Type Name="tbl_PembayaranDetail">
+      <Column Name="auto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_pembayaran" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id_obat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="jumlah" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="harga" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Obat_tbl_PembayaranDetail" Member="tbl_Obat" ThisKey="id_obat" OtherKey="id_obat" Type="tbl_Obat" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="tbl_PembayaranMaster_tbl_PembayaranDetail" Member="tbl_PembayaranMaster" ThisKey="id_pembayaran" OtherKey="id_pembayaran" Type="tbl_PembayaranMaster" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_PembayaranMaster" Member="tbl_PembayaranMasters">
+    <Type Name="tbl_PembayaranMaster">
+      <Column Name="id_pembayaran" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_diagnosa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="total" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="waktu_pembayaran" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_PembayaranMaster_tbl_PembayaranDetail" Member="tbl_PembayaranDetails" ThisKey="id_pembayaran" OtherKey="id_pembayaran" Type="tbl_PembayaranDetail" />
+      <Association Name="tbl_Diagnosa_tbl_PembayaranMaster" Member="tbl_Diagnosa" ThisKey="id_diagnosa" OtherKey="id_diagnosa" Type="tbl_Diagnosa" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Ruangan" Member="tbl_Ruangans">
+    <Type Name="tbl_Ruangan">
+      <Column Name="id_ruangan" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nama_ruangan" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="id_tipe" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id_dokter" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_jadwal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Ruangan_tbl_Antrian" Member="tbl_Antrians" ThisKey="id_ruangan" OtherKey="id_ruangan" Type="tbl_Antrian" />
+      <Association Name="tbl_Dokter_tbl_Ruangan" Member="tbl_Dokter" ThisKey="id_dokter" OtherKey="id_dokter" Type="tbl_Dokter" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="tbl_Jadwal_tbl_Ruangan" Member="tbl_Jadwal" ThisKey="id_jadwal" OtherKey="id_jadwal" Type="tbl_Jadwal" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="tbl_tipe_tbl_Ruangan" Member="tbl_tipe" ThisKey="id_tipe" OtherKey="id_tipe" Type="tbl_tipe" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_tipe" Member="tbl_tipes">
+    <Type Name="tbl_tipe">
+      <Column Name="id_tipe" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nama" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_tipe_tbl_Ruangan" Member="tbl_Ruangans" ThisKey="id_tipe" OtherKey="id_tipe" Type="tbl_Ruangan" />
+    </Type>
+  </Table>
+</Database>
